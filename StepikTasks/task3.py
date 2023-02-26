@@ -1,5 +1,10 @@
-# На вход программе подается строка текста. 
-# Напишите программу, которая выводит на экран символ, который появляется наиболее часто.
-# aaaabbc -> a
 
-print("Hi, Gregory!, \"Gojo\" ")
+size = int(input("Write a size of array: "))
+i = 0
+userList = []
+while i < size:
+    userList.append(int(input("Write a value: ")))
+    i += 1
+print(userList)
+
+
