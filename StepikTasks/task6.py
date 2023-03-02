@@ -6,7 +6,6 @@
 
 print("Write a string: ")
 s = input()
-c = 0
 result = ''
 result2 = ''
 if s.count('f') == 1:
