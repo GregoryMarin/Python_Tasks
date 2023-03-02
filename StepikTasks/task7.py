@@ -3,7 +3,13 @@
 # а также все символы, находящиеся между ними.
 print('Write a string: ')
 s = input()
-j = s.find('h')
-k = s.rfind('h')
-range = s[j:k+1]
-print(s.replace(range, ''))
+j = ''
+k = ''
+r = ''
+if 'h' in s:
+    j = s.find('h')
+    k = s.rfind('h')
+    r = s[j:k+1]
+    print(s.replace(r, ''))
+else:
+    print("There is no 'h'! ")
