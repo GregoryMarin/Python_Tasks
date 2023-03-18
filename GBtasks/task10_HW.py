@@ -22,3 +22,5 @@ if count_zero < count_one:
     print(count_zero)
 else:
     print(count_one)
+
+# Не знаю как сдалать так, чтобы после ошибки, код с 21-24 строки не выполнялся
