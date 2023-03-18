@@ -19,8 +19,8 @@ for i in range(amount):
         print('Incorrect value! There is must be only "1" or "0" ')
         break
 if count_zero < count_one:
-    print(count_zero)
+    print(f"{count_zero} tails need to turn over!")
 else:
-    print(count_one)
+    print(f"{count_one} - eagles need to turn over!")
 
 # Не знаю как сдалать так, чтобы после ошибки, код с 21-24 строки не выполнялся
