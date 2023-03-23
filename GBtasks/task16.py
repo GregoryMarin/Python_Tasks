@@ -5,7 +5,7 @@
 
 
 # lst = [1, 2, 3, 4, 5]
-# k = 3
+# k = 3 % len(lst)
 # print(lst)
 # print(lst[k-1:] + lst[:k-1])
 
