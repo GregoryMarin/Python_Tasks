@@ -10,8 +10,8 @@ dict_list = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"},
 
 all_vals = set()
 for into_dict in dict_list:
-val_set = set(into_dict.values())
+    val_set = set(into_dict.values())
 
-all_vals |= val_set
+    all_vals |= val_set
 
 print(all_vals)

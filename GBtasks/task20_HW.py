@@ -9,13 +9,23 @@
 # *Пример:*
 # ноутбук
 #     12
-eng_dict = {}
-rus_dict = {}
-eng_dict = {1: 'AEIOULNSTR', 2:'DG', 3:'BCMP', 4: 'FHVWY', 5: 'K', 8: 'JX', 10: 'QZ'}
+eng = 'qwertyuiopasdfghjklzxcvbnm'
+rus = 'йцукенгшщзхъфывапролджэёячсмитьбю'
+eng_words = {1: 'AEIOULNSTR', 2:'DG', 3:'BCMP', 4: 'FHVWY', 5: 'K', 8: 'JX', 10: 'QZ'}
 rus_dict = {1: 'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 4: 'ЙЫ', 5: 'ЖЗХЦЧ', 8: 'ШЭЮ', 10: 'ФЩЪ'}
-print(eng_dict)
-print(rus_dict)
-word = input("Write a word: ")
-for i in word:
-    if i == eng_dict.values():
-        print(eng_dict.keys())
+
+text = input("Write a word: ").upper()
+if text[0].lower() in eng:
+    price = 0
+    for i in text:
+        for k, v in eng_words.items():
+            if i in v:
+                price += k
+    print(price)
+else:
+    price = 0
+    for i in text:
+        for k, v in rus_dict.items():
+            if i in v:
+                price += k
+    print(price)
