@@ -5,3 +5,11 @@
 # товарищи обратились к Вам, студентам.
 #
 # Примечание: Программные коды на следующих слайдах
+
+numbers = int(input("Write a number: "))
+max_num = numbers
+while numbers != 0:
+    numbers = int(input("Write a number: "))
+    if numbers > max_num:
+        max_num = numbers
+print(f'Max number you entered => {max_num}')
