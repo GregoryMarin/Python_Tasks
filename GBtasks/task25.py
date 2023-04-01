@@ -6,12 +6,23 @@
 #
 # Для решения данной задачи используйте функцию .split()
 
-s = ('a a a b c a a d c d d').split()
-dict = {}
-for i in s:
-    if i not in dict:
-        dict[i] = 0
-        print(i, end=' ')
-    elif i in dict:
-        dict[i] += 1
-        print(f"{i}_{dict[i]}", end='')
+# s = ('a a a b c a a d c d d').split()
+# dict = {}
+# for i in s:
+#     if i not in dict:
+#         dict[i] = 0
+#         print(i, end=' ')
+#     elif i in dict:
+#         dict[i] += 1
+#         print(f"{i}_{dict[i]}", end=' ')
+
+l = 'a a a b c a a d c d d'
+l = l.replace(' ','')
+print(list)
+i, n, st = 0, len(l),''
+
+while i<n:
+    if l[:i].count(l[i])==0 : st += f'{l[i]}'
+    else : st += f'{l[i]}_{l[:i]}.count{l[i]}'
+    i += 1
+print(st)
