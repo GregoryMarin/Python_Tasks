@@ -16,10 +16,21 @@
 
 # S = pi*a*b
 
-def find_farthest_orbit(orbits):
-    orbits = [(a, b) for (a, b) in orbits if a != b]
-    space = [a * b for (a, b) in orbits]
-    return (orbits[space.index(max(space))])
+# def find_farthest_orbit(orbits):
+#     orbits = [(a, b) for (a, b) in orbits if a != b]
+#     space = [a * b for (a, b) in orbits]
+#     return (orbits[space.index(max(space))])
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# print(find_farthest_orbit(orbits))
 
+from math import pi
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
-print(find_farthest_orbit(orbits))
+orbits = list(filter(lambda x: x[0] != x[1], orbits))
+# print(orbits)
+x = list(map(lambda x: x[0] * x[1] * pi, orbits))
+# print(x)
+orbits_dict = dict(zip(x, orbits))
+# print(orbits_dict)
+print(orbits_dict[max(kei for kei in orbits_dict.keys())])
+
+
