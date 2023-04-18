@@ -9,10 +9,10 @@
 5 -> 6
 4 -> -1
 """
-number = int(input("Write a number: "))
-f1 = f2 = 1
-index = 3
-while number > f2:
-    f1, f2 = f2, f1 + f2
-    index += 1
-print(index if number == f2 else '-1')
+# number = int(input("Write a number: "))
+# f1 = f2 = 1
+# index = 3
+# while number > f2:
+#     f1, f2 = f2, f1 + f2
+#     index += 1
+# print(index if number == f2 else '-1')
